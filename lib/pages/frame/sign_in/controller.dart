@@ -29,7 +29,7 @@ class SignInController extends GetxController {
 
   // 忘记密码
   handleFogotPassword() {
-    toastInfo(msg: '忘记密码');
+    toastInfo(msg: 'Forgot password function is comming soon !');
   }
 
   // 执行登录操作

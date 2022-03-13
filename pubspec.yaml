@@ -62,20 +62,20 @@ dependencies:
 
   # This plugin has been replaced by the Flutter Community Plus Plugins version,
   # device_info_plus: ^3.2.2
-  device_info: ^2.0.0
+  # device_info: ^2.0.0
 
   # This plugin has been replaced by the Flutter Community Plus Plugins version, package_info_plus
-  package_info: ^2.0.2
-  # package_info_plus: ^1.4.0
+  # package_info: ^2.0.2
+  package_info_plus: ^1.4.0
 
   # A Flutter plugin for finding commonly used locations on the filesystem
-  path_provider: ^2.0.9
+  # path_provider: ^2.0.9
 
   # Permission plugin for Flutter. This plugin provides a cross-platform (iOS, Android) API to request and check permissions.
   permission_handler: ^9.2.0
 
   # Pure Dart SDK used by any Dart application like AngularDart, CLI and Server
-  sentry: ^6.3.0
+  # sentry: ^6.3.0
 
   # Flutter plugin for accepting incoming links - App/Deep Links (Android), Universal Links and Custom URL schemes (iOS)
   uni_links: ^0.5.1

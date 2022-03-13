@@ -8,21 +8,22 @@ import 'index.dart';
 class CategoryController extends GetxController {
   CategoryController();
 
-  /// UI 组件
+  /// UI components
   final RefreshController refreshController = RefreshController(
     initialRefresh: true,
   );
 
-  /// 响应式成员变量
+  /// Reactive member variables
   final state = CategoryState();
 
-  /// 成员变量
+  /// Member variables
+  
   String categoryCode = '';
   int curPage = 1;
   int pageSize = 20;
   int total = 20;
 
-  /// 事件
+  /// event
 
   void onRefresh() {
     fetchNewsList(isRefresh: true).then((_) {
@@ -44,9 +45,9 @@ class CategoryController extends GetxController {
     }
   }
 
-  // 方法
+// method
 
-  // 拉取数据
+// pull data
   Future<void> fetchNewsList({bool isRefresh = false}) async {
     var result = await NewsAPI.newsPageList(
       params: NewsPageListRequestEntity(
@@ -67,9 +68,9 @@ class CategoryController extends GetxController {
     state.newsList.addAll(result.items!);
   }
 
-  /// 生命周期
+/// The life cycle
 
-  ///dispose 释放内存
+  ///dispose release memory
   @override
   void dispose() {
     super.dispose();
