@@ -93,6 +93,7 @@ class SignInPage extends GetView<SignInController> {
             keyboardType: TextInputType.emailAddress,
             hintText: "Email",
             marginTop: 0,
+            
             // autofocus: true,
           ),
           // password input
@@ -101,6 +102,7 @@ class SignInPage extends GetView<SignInController> {
             keyboardType: TextInputType.visiblePassword,
             hintText: "Password",
             isPassword: true,
+            
           ),
 
           // 注册、登录 横向布局
@@ -110,12 +112,12 @@ class SignInPage extends GetView<SignInController> {
             child: Row(
               children: [
                 // 注册
-                btnFlatButtonWidget(
-                  onPressed: controller.handleNavSignUp,
-                  gbColor: AppColors.thirdElement,
-                  title: "Sign up",
-                ),
-                Spacer(),
+                // btnFlatButtonWidget(
+                //   onPressed: controller.handleNavSignUp,
+                //   gbColor: AppColors.thirdElement,
+                //   title: "Sign up",
+                // ),
+                // Spacer(),
                 // 登录
                 btnFlatButtonWidget(
                   onPressed: controller.handleSignIn,

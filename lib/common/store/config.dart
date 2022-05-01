@@ -22,6 +22,7 @@ class ConfigStore extends GetxController {
   void onInit() {
     super.onInit();
     isFirstOpen = StorageService.to.getBool(STORAGE_DEVICE_FIRST_OPEN_KEY);
+    
   }
 
   Future<void> getPlatform() async {
@@ -30,7 +31,7 @@ class ConfigStore extends GetxController {
 
   // 标记用户已打开APP
   Future<bool> saveAlreadyOpen() {
-    return StorageService.to.setBool(STORAGE_DEVICE_FIRST_OPEN_KEY, false);
+    return StorageService.to.setBool(STORAGE_DEVICE_FIRST_OPEN_KEY, true);
   }
 
   void onInitLocale() {
